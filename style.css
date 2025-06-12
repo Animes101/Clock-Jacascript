@@ -26,12 +26,17 @@ body{
 }
 .clock div h1{
     text-align: center;
-    font-size: 40px;
+    font-size: 80px;
     font-weight: 400;
     font-style: italic;
     font-family: "Manrope", sans-serif;
+    text-shadow: 2px 3px  #003ae7;
 }
-
+.clock p{
+    text-align: center;
+    font-weight: bold;
+    
+}
 
 .well-message{
     width: 50%;

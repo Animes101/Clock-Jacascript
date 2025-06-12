@@ -1,6 +1,7 @@
 //Clock Functionality
 
 var  headingShow=document.querySelectorAll('h1');
+var fullYear=document.querySelector('p');
 
 function showTime(){
 
@@ -9,10 +10,12 @@ function showTime(){
     var hours=date.getHours();
     var minutes=date.getMinutes();
     var second=date.getSeconds();
+    var year=date.getFullYear()
 
     headingShow[0].innerText=day;
     headingShow[1].innerText=hours;
     headingShow[2].innerText=minutes;
+    fullYear.innerText=year;
     if(second<=10){
         headingShow[3].innerHTML=`0`+second;
     }else{
